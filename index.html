@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Bienvenido al Dashboard</h1>
+    <div class="dashboard">
+        <!-- Reloj Digital -->
+        <div class="widget clock-container">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
+
+        <!-- Estación Meteorológica -->
+        <div class="widget weather-container">
+            <h2>Madrid / Spain</h2>
+            <p id="weather-description">Partly Cloudy</p>
+            <p id="temperature">9.3°C</p>
+            <p id="forecast">Precipitaciones: 0%, Humedad: 53%, Viento: 3.6 km/h</p>
+        </div>
+
+        <!-- Generador de Contraseñas -->
+        <div class="widget password-container">
+            <h2>Crea tu contraseña segura</h2>
+            <input type="number" id="password-length" placeholder="Número de caracteres" value="12">
+            <button onclick="generatePassword()">Generar Contraseña</button>
+            <p id="generated-password"></p>
+        </div>
+
+        <!-- Links Interesantes -->
+        <div class="widget links-container">
+            <h2>Añade tu enlace de interés</h2>
+            <input type="text" id="link-name" placeholder="Nombre de tu enlace">
+            <input type="url" id="link-url" placeholder="Pega aquí la URL">
+            <button onclick="addLink()">Añadir enlace</button>
+            <ul id="links-list"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
